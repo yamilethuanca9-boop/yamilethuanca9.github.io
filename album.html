@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Álbum de Fotos</title>
     <link rel="stylesheet" href="estilos.css">
+
 </head>
 
 <body>
@@ -13,7 +14,7 @@
 
         <header>
             <h1>Yesenia Yamilet Huanca Coila</h1>
-            <p>Contacto</p>
+            <p>Mi Álbum de Fotos</p>
         </header>
 
         <nav>
@@ -32,33 +33,23 @@
         <div class="contenido-central">
 
             <section>
-                <h2>Contacto</h2>
-                <p>Si deseas comunicarte conmigo, aquí tienes mis datos:</p>
+                <h2>Mi Álbum de Fotos</h2>
+                <p>Algunos momentos importantes de mi hermosa vida:</p>
 
-                <br>
-
-                <div class="contacto">
-                    <article>
-                        <h3>Correo electrónico</h3>
-                        <p><a href="yamilethuanca9@gmail.com">yamilethuanca9@gmail.com</a></p>
-                    </article>
-
-                    <article>
-                        <h3>Teléfono</h3>
-                        <p>+51 943 090 115</p>
-                    </article>
-
-                    <article>
-                        <h3>Mis Resdes Sociales</h3>
-                        <p>
-                            <a href="https://www.facebook.com/share/181gtfzu9Y/" target="_blank">facebook</a><br>
-                            <a href="https://www.instagram.com/yui_sakura39?igsh=MTl1MXJyYWo3Mm10Nw=="
-                                target="_blank">Instagram</a>
-                        </p>
-                    </article>
+                <div class="galeria">
+                    <img src="imagenes/imagen1.jpg" alt="imagen 1">
+                    <img src="imagenes/imagen2.jpg" alt="imagen 2">
+                    <img src="imagenes/imagen3.jpg" alt="imagen 3">
+                    <img src="imagenes/imagen4.jpg" alt="imagen 4">
+                    <img src="imagenes/imagen5.jpg" alt="imagen 5">
+                    <img src="imagenes/imagen6.jpg" alt="imagen 6">
+                    <img src="imagenes/imagen7.jpg" alt="imagen 7">
+                    <img src="imagenes/imagen8.jpg" alt="imagen 8">
+                    <img src="imagenes/imagen9.jpg" alt="imagen 9">
+                    <img src="imagenes/imagen10.jpg" alt="imagen 10">
                 </div>
-            </section>
 
+            </section>
 
             <aside>
                 <h3>Información adicional</h3>
@@ -91,6 +82,28 @@
         </footer>
 
     </div>
+
+    <style>
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
 </body>
 
 </html>
